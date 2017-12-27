@@ -8,7 +8,8 @@ import {tools} from 'yrui';
 const contain = tools.contain;
 const session = tools.$session;
 const userImg = require('./imgs/photo.png');
-const userName = '赵鸿燊';
+const logo = require('./imgs/photo.png');
+const userName = '喵喵';
 
 export default class MMBase extends React.Component{
   constructor(props){
@@ -117,8 +118,8 @@ export default class MMBase extends React.Component{
       <div className="mmbase">
         <div className="banner">
           {/*<img className="banner-img" src={require('./imgs/img_nav.png')}/>*/}
-          <img className="logo" src={require('./imgs/img_guohui.png')}/>
-          <div className="app-name">智慧石河子政务服务平台</div>
+          <img className="logo" src={logo}/>
+          <div className="app-name">喵喵的小田园</div>
         </div>
         <div className="mmleft">
           <Menu mode="inline" onClick={this.menuClick} onOpenChange={this.onOpenChange}
